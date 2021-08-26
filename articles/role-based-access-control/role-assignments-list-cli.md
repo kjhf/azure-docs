@@ -173,7 +173,7 @@ az role assignment list --scope /providers/Microsoft.Management/managementGroups
 
 1. To list the role assignments, use [az role assignment list](/cli/azure/role/assignment#az_role_assignment_list).
 
-    By default, only role assignments for the current subscription will be displayed. To view role assignments for the current subscription and below, add the `--all` parameter. To view inherited role assignments, add the `--include-inherited` parameter.
+    By default, only role assignments for the current subscription will be displayed. To view role assignments for the current subscription and below, add the `--all` parameter. To view inherited role assignments, add the `--include-inherited` parameter. To include assignments from the groups that the user is a member, add the `--include-groups` parameter. To list the role assignments for classic administrators, add the `--include-classic-administrators true` parameter. 
 
     ```azurecli
     az role assignment list --assignee {objectId}
